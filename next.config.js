@@ -6,7 +6,9 @@ const nextConfig = {
     clientSecret: process.env.clientSecret,
     redirectUri: process.env.redirectUri,
   },
-  appDir: true,
+  experimental: {
+    appDir: true,
+  },
 };
 
 module.exports = nextConfig
