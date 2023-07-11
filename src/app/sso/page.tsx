@@ -1,7 +1,6 @@
 "use client";
 
 import axios from "axios";
-import { error } from "console";
 
 export default function Home() {
   return (
@@ -10,7 +9,7 @@ export default function Home() {
         style={{ backgroundColor: "GrayText", padding: 10, borderRadius: 10 }}
         onClick={() =>
           axios
-            .get("/api/sso")
+            .get("https://sso-test.onrender.com/sso/login")
             .then((res) => {
               console.log("success", res.data);
             })
