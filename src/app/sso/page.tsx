@@ -9,7 +9,7 @@ export default function Home() {
         style={{ backgroundColor: "GrayText", padding: 10, borderRadius: 10 }}
         onClick={() =>
           axios
-            .get("https://sso-test.onrender.com/sso/login")
+            .get("https://sso-test.onrender.com/login")
             .then((res) => {
               console.log("success", res.data);
             })
