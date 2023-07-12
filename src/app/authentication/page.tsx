@@ -9,9 +9,9 @@ export default function Authentication() {
       return "0";
     }
   }
-  if (window) {
-    getCookie("token");
-  }
+  // if (window) {
+  //   getCookie("token");
+  // }
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       HI Welcome to Auth page the user is
